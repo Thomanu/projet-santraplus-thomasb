@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santraplus</title>
+    <link rel="stylesheet" href="/Projetaucasou/projet-dossier/css/santraplusbis.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div id="logo">
+                <img src="/Projetaucasou/projet-dossier/img/logo_santraplus.png" alt="logo">
+            </div>
+            <div id="navbarlinks"></div>
+        </nav>
+    </header>
+    <!-- Début du contenu du formulaire -->
+    <main class="main">
+        <fieldset>
+            <!-- Titres de mon formulaire -->
+            <div class="title">
+                <h2>Formulaire à adresser par courrier, fax ou e-mail :
+                    planning@santraplus.fr
+                </h2>
+                <h3>Planning Santra Plus – CS 20874 – 76087 Le Havre CEDEX – Fax : 02 32 74 51
+                    20
+                </h3>
+            </div>
+            <!-- Début du formulaire -->
+            <!-- Partie vos references -->
+            <form action="post">
+                <fieldset class="form">
+
+                    <div class="warning">
+                        <h1>Attention ! Toute demande incomplète ne sera pas prise en compte</h1>
+                    </div>
+
+                    <div class="formtitle">
+                        <h2>Vos références:</h2>
+                    </div>
+                    <div class="form1">
+                        <div class="forminput">
+                            <label for="reason">Raison sociale:</label>
+                            <input type="text" id="reason">
+                            <label for="membernumber">N° d’adhérent:</label>
+                            <input type="text" id="membernumber" maxlength="10">
+                        </div>
+                        <div class="forminput">
+                            <label for="askername">Nom du demandeur:</label>
+                            <input type="text" id="askername" maxlength="10" required>
+                            <label for="telephone">Tél :</label>
+                            <input type="text" id="telephone" maxlength="10" required>
+                        </div>
+                        <div class="forminput">
+                            <label for="fax"> Fax :</label>
+                            <input type="text" id="fax" required maxlength="10">
+                            <label for="mail">Mail :</label>
+                            <input type="text" id="mail" required maxlength="10">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Partie annuler ou reporter un rdv -->
+                <div class="form1">
+                    <h3>Annuler ou reporter un rendez-vous:</h3>
+                    <div class="forminput">
+                        <label for="appointmentdate"><strong>Date</strong> du rendez-vous </label>
+                        <input type="date" name="appointmentdate" id="appointmentdate" required />
+                        <label for="appointmenttime"><strong>Horaire</strong> du rendez-vous: </label>
+                        <input type="time" name="appointmenttime" id="appointmenttime" required />
+                    </div>
+                    <div class="forminput">
+                        <select name="doc">
+                            <option value="doc">Nom du médecin ou infirmière</option>
+                            <option value="doc1">Medecin 1</option>
+                            <option value="doc2">Medecin 2</option>
+                            <option value="nurse1">Infirmière 1</option>
+                            <option value="nurse2">Infirmière 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form1">
+                    <h3>Reporter le rendez-vous</h3>
+                    <div class="forminput">
+                        <label for="pushback"><input name="option" type="radio" id="pushback"
+                                required />Reporter</label>
+                        <label for="cancel"><input name="option" type="radio" id="cancel" required />Annuler</label>
+                        <div id="divider2">
+                            <hr>
+                        </div>
+                        <div class="form1">
+                            <div class="forminput">
+                                <label for="reason2">Motif(s): </label>
+                                <input type="text" name="reason" id="reason2" required />
+                            </div>
+                            <div class="forminput">
+                                <label for="availability">Disponibilité: </label>
+                                <input type="date" name="availability" id="availability" required />
+                                <label for="rdvtime">Horaire du rendez-vous: </label>
+                                <input type="time" name="rdvtime" id="rdvtime" required />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    <!-- Fin du contenu du formulaire -->
+    <div class="bottom">
+        <div class="return"><a href="index.html"></a></div>
+        <div class="next"><input type="submit" value="Envoyer le formulaire"><a href="actions.html"></a></div>
+    </div>
+    <!-- Début du footer -->
+    <footer>
+        <ul class="footer-links">
+            <li>Siège social : SANTRA PLUS</li>
+            <li>CS 20874</li>
+            <li>76087 Le Havre cedex</li>
+            <li>www.santraplus.fr</li>
+            <li>SIRET 781 061 106 000 48</li>
+            <li>APE 8621Z</li>
+        </ul>
+    </footer>
+    <!-- Fin du footer -->
+</body>
+
+</html>

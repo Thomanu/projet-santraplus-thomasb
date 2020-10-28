@@ -1,0 +1,37 @@
+/* Edition des bordures et des ombres */
+body>#site-wrapper>main>section#site-content {
+    margin: auto;
+    border-radius: 8px;
+    background-color: #48b7930d;
+    border: 2.5px solid #00000050;
+    width: 70%;
+    box-shadow: 0px 0px 2vw 0px #747373;
+    margin-top: 1rem;
+}
+
+body>#site-wrapper>main>section#site-content .slogan {
+    padding: 1rem;
+    /* margin: 1em 1em 1em 0; */
+    text-align: center;
+    background-color: #20dfbf50;
+
+}
+
+/* Edition du titre de la premiere page du site */
+body>#site-wrapper>main>section#site-content h3 {
+    text-decoration: underline;
+    display: inline;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+/* Edition des paragraphes */
+body>#site-wrapper>main>section#site-content p {
+    padding: 2em;
+    line-height: 2rem;
+    font-size: 1em;
+    text-align: center;
+}

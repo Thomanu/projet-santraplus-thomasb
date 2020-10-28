@@ -1,0 +1,137 @@
+.imageset {
+    background-image: url(/Projetaucasou/projet-dossier/img/blue-green-modern-background.jpg);
+    background-size: cover;
+}
+
+#site-wrapper>main {
+    width: 70%;
+    margin: auto;
+    background-color: #48b7930d;
+    border: 2.5px solid #0092b750;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2vw 0px #747373;
+    margin-top: 1rem;
+}
+
+#site-content>.h2-block {
+
+    text-align: center;
+    padding: 3em;
+
+    margin: auto;
+    width: 80%;
+
+    transition: background-color 200ms;
+}
+
+#site-content>.h2-block:hover {
+    background-color: #0092b734;
+}
+
+#site-content>.h2-block>h2 {
+    display: inline;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 1px 1px 5px black;
+}
+
+body>#site-wrapper>main>section#site-content .title-box {
+    background-color: #0092b750;
+    padding: 1em;
+    margin: 1em 1em 1em 0;
+    text-align: left;
+    width: 60%;
+}
+
+#site-content h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    display: inline;
+    font-size: 1.5em;
+}
+
+#site-content h4 {
+    font-family: 'Fjalla One', sans-serif;
+    color: rgb(0, 150, 170);
+    margin: 1em;
+    transition: color 100ms;
+}
+
+#site-content h4:hover {
+    color: rgb(0, 128, 145);
+}
+
+#site-content h5 {
+    font-family: 'Fjalla One', sans-serif;
+    color: rgb(0, 150, 170);
+    margin: 1em;
+    transition: color 100ms;
+}
+
+#site-content h5:hover {
+    color: rgb(0, 128, 145);
+}
+
+#site-content p {
+    line-height: 1.6rem;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+#site-content span {
+    color: rgb(0, 150, 170);
+    transition: color 100ms;
+}
+
+#site-content span:hover {
+    color: rgb(0, 128, 145);
+}
+
+#site-content span.italic {
+    font-style: italic;
+    color: lightgray;
+}
+
+#site-content ul {
+    list-style-type: none;
+    margin: 1em;
+    line-height: 1.5em;
+}
+
+#site-content .flexbox-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 34em;
+   
+}
+
+#site-content>div>div.par-and-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#site-content>div>div.par-and-img {
+    display: flex;
+}
+
+#site-content>div .img-block {
+    background-color: rgba(173, 173, 173, 0.315);
+    text-align: center;
+    font-style: italic;
+    color: rgb(175, 175, 175);
+    margin-right: 1em;
+    transition: color, 200ms;
+}
+
+#site-content>div .img-block:hover {
+    background-color: rgba(228, 228, 228, 0.281);
+}
+
+.topic>div:nth-child(5)>img:nth-child(1) {
+    width: 850px;
+    height: 400px;
+
+}

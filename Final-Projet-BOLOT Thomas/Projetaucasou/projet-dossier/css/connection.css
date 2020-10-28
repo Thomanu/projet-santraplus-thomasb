@@ -1,0 +1,13 @@
+
+    * {
+        background-image: url(/Projetaucasou/projet-dossier/img/blue-green-modern-background.jpg);
+        background-size: cover ;
+    }
+
+
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 15rem;
+}

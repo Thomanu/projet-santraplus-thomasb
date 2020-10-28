@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* iamge fond body centrée */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: (#5cc5ee);
+    background-attachment: fixed;
+    background-image: url(../img/blue-green-modern-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Modification du header */
+body>#site-wrapper>header>#titlesite {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 50%;
+    margin: auto;
+
+    border-bottom: 2px solid #000000;
+    box-shadow: 0px 0px 2vw 0px #747373;
+ 
+
+    background-color: white;
+    background: linear-gradient(rgba(65, 63, 216, 0.4), rgba(16, 128, 1, 0.4)), url(../img/PP_HealthAndSocialCare_Image1-1200x568.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    z-index: 1;
+
+}
+
+
+body>#site-wrapper>header>#mainmenu>nav>.registerandloginform:hover>div:not(:last-of-type) {
+    background-color: rgba(201, 201, 201, 0.726);
+    border-radius: 10px;
+}
+
+body>#site-wrapper>header>#mainmenu>nav>.registerandloginform>div:last-of-type {
+    background-color: white;
+    border: 5px solid #0092b750;
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    width: 18em;
+    visibility: hidden;
+    transition: height 500ms ease-in-out 100ms, width 500ms ease-in-out , visibility 500ms;
+
+}
+
+body>#site-wrapper>header>#mainmenu>nav>.registerandloginform>div:last-of-type>form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body>#site-wrapper>header>#mainmenu>nav>.registerandloginform>div:last-of-type>form>input {
+    height: 1.5em;
+}
+
+/* Résolution du problème de parent engendré par le rajout d'une div */
+
+body>#site-wrapper>header>#mainmenu>nav>.registerandloginform a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+body>#site-wrapper>header>#mainmenu>nav>.registerandloginform:hover>div:last-of-type {
+    height: 20em;
+    visibility: visible;
+}
+
+
+#site-wrapper>header>section>div.img-block {
+
+    width: 15%;
+    display: inline;
+    position: relative;
+
+}
+
+
+body>#site-wrapper>header>section>h1 {
+  /* Modification de la police */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    display: inline-block;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #129201;
+
+}
+
+body>#site-wrapper>header>section>.h2-block>#santraplustitle {
+  /* Modification de la devise, couleur, opacité, taille et largeur, le tout centré */
+    color: #000000d8;
+    opacity: 90%;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+body>#site-wrapper>header>section>.h2-block {
+    background-color: rgba(0, 0, 0, 0.329);
+    margin: 1% 8% 2% 8%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0px 5px;
+}
+
+body>#site-wrapper>header>section>.h2-block>h2 {
+    text-align: center;
+    color: rgba(54, 172, 166, 0.8);
+}
+
+
+
+
+
+body>#site-wrapper>header>#mainmenu>nav {
+
+    position: relative;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    height: 6em;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid #000000;
+    background: linear-gradient(rgba(104, 218, 193, 0.4), rgba(83, 218, 195, 0.4)), url(../img/téléchargement.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+body>#site-wrapper>header>#mainmenu>nav>div:first-of-type:not(:last-of-type) {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+
+body>#site-wrapper>header>#mainmenu>nav>div:not(:first-of-type) {
+    background-color: rgba(62, 78, 73, 0.315);
+    width: 12%;
+    text-align: center;
+    height: 4em;
+    line-height: 4em;
+    margin-top: 18px;
+    /* transition: background-color 200ms; */
+    border-radius: 50px;
+}
+
+
+body>#site-wrapper>header>#mainmenu>nav>div>a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+
+body>#site-wrapper>header>#mainmenu>nav>div:hover:not(:first-of-type):not(:last-of-type) {
+    background-color: rgba(30, 35, 36, 0.726);
+}

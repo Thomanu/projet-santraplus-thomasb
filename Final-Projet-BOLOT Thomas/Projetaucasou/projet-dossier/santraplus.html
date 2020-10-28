@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santraplus</title>
+    <link rel="stylesheet" href="/Projetaucasou/projet-dossier/css/santraplus.css">
+</head>
+
+<body>
+    <!-- Début du header -->
+    <header>
+        <nav class="navbar">
+            <div id="logo">
+                <img src="/Projetaucasou/projet-dossier/img/logo_santraplus.png" alt="logo">
+            </div>
+        </nav>
+    </header>
+    <!-- fin du header -->
+
+    <main class="main">
+        <!-- Information, coordonnées ainsi que lien vers le second formulaire -->
+        <div class="title">
+            <h2>Formulaire à adresser par courrier, fax ou e-mail :
+                planning@santraplus.fr
+            </h2>
+            <h2> <a href="/Projetaucasou/projet-dossier/santraplusbis.html">Vers le formulaire d'annulation</a> </h2>
+            <h3>Planning Santra Plus – CS 20874 – 76087 Le Havre CEDEX – Fax : 02 32 74 51
+                20
+            </h3>
+        </div>
+        <!-- Début du formlaire -->
+        <form action="post">
+            <fieldset class="form">
+
+                <div class="warning">
+                    <h1>Attention ! Toute demande incomplète ne sera pas prise en compte</h1>
+                </div>
+
+
+                <div class="formtitle">
+                    <h2>Vos références:</h2>
+                </div>
+                <div class="form1">
+                    <div class="forminput">
+                        <label for="reason">Raison sociale:</label>
+                        <input type="text" id="reason" required>
+                        <label for="membernumber">N° d’adhérent:</label>
+                        <input type="text" id="membernumber" maxlength="10" required>
+                    </div>
+                    <div class="forminput">
+                        <label for="askername">Nom du demandeur:</label>
+                        <input type="text" id="askername" required maxlength="10">
+                        <label for="telephone">Tél :</label>
+                        <input type="text" id="telephone" required maxlength="10">
+                    </div>
+                    <div class="forminput">
+                        <label for="fax"> Fax :</label>
+                        <input type="text" id="fax" required maxlength="10">
+                        <label for="mail">Mail :</label>
+                        <input type="text" id="mail" required maxlength="20">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form">
+                <div class="formtitle">
+                    <h2>Le salarié</h2>
+                </div>
+                <div class="form1">
+                    <div class="form-radio">
+                        <label for="gender1"><input name="gender" type="radio" id="gender1" />Monsieur</label>
+                        <label for="gender2"><input name="gender" type="radio" id="gender2" />Madame</label>
+                        <label for="gender3"><input name="gender" type="radio" id="gender3" />Autre</label>
+                    </div>
+                    <div class="form1">
+                        <div class="forminput">
+                            <label for="birthname">Nom de naissance :</label>
+                            <input type="text" name="birthname" id="birthname" required maxlength="10">
+                            <label for="weddingname"> Nom marital :</label>
+                            <input type="text" id="weddingname" required maxlength="10">
+                        </div>
+                        <div class="forminput">
+                            <label for="job"> Poste de travail :</label>
+                            <input type="text" id="job" required maxlength="10">
+                            <label for="name"> Prénom :</label>
+                            <input type="text" id="name" required maxlength="10">
+                        </div>
+                        <div class="forminput">
+                            <label for="date">Date de naissance :</label>
+                            <input type="date" id="date" required>
+                            <label for="pcscode"> Code PCS:</label>
+                            <input type="text" id="pcscode" maxlength="10" required>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form">
+                <div class="form1">
+                    <div class="formtitle">
+                        <h3>Informations complémentaires pour création nouveau salarié</h3>
+                    </div>
+                    <div class="forminput">
+                        <label for="hiring-date">Date d'embauche :</label>
+                        <input type="date" name="hiring-date" id="hiring-date" required />
+                        <label for="contract-type">Type de contrat </label>
+                        <input type="text" name="contract-type" id="contract-type" required maxlength="15"
+                            placeholder="CDD, CDI, apprenti..." />
+                        <label for="temporary-contract-end-date">Pour les CDD, date de fin de contrat : </label>
+                        <input type="date" name="temporary-contract-end-date" id="temporary-contract-end-date"
+                            required />
+                    </div>
+                </div>
+                <div class="forminput">
+                    <h3>Suivi Individuel Simple(SI)</h3>
+                    <label for="si-answer1"><input name="sianswer" id="si-answer1" type="checkbox" />Cas général hors
+                        risque
+                        particulier</label>
+                    <label for="sianswer2"><input name="sianswer" id="sianswer2" type="checkbox" />Moins de 18 ans non
+                        affecté à
+                        travaux réglementés.</label>
+                    <label for="sianswer3"><input name="sianswer" id="sianswer3" type="checkbox" />Salarié exposé aux
+                        agents
+                        biologiques groupe 2 (AB2)</label>
+                    <label for="sianswer4"><input name="sianswer" id="sianswer4" type="checkbox" />Salarié exposé aux
+                        champs
+                        électromagnétiques si VLE dépassée.</label>
+                    <h3>Suivi Individuel Adapté (SIA)</h3>
+                    <label for="sia-answer1"><input name="sia-answer" id="sia-answer1" type="checkbox" />Travailleur de
+                        nuit</label>
+                    <label for="sia-answer2"><input name="sia-answer" id="sia-answer2" type="checkbox" />Travailleur
+                        handicapé</label>
+                    <label for="sia-answer3"><input name="sia-answer" id="sia-answer3" type="checkbox" />Travailleur
+                        titulaire
+                        d’une
+                        pension d’invalidité</label>
+                    <label for="sia-answer4"><input name="sia-answer" id="sia-answer4" type="checkbox" />Femme enceinte,
+                        allaitante ou
+                        venant d’accoucher</label>
+                </div>
+                <div class="forminput">
+                    <h3>Suivi Individuel Renforcé (SIR) :</h3>
+                    <label for="siranswer1"><input name="siranswer" id="siranswer1" type="checkbox" />Salarié exposé à
+                        l’amiante</label>
+                    <label for="siranswer2"><input name="siranswer" id="siranswer2" type="checkbox" />Salarié exposé aux
+                        agents
+                        biologiques gp 3 et 4 (ABP3 et 4)</label>
+                    <label for="siranswer3"><input name="siranswer" id="siranswer3" type="checkbox" />Salarié exposé aux
+                        rayonnements
+                        ionisants Cat B</label>
+                    <label for="siranswer4"><input name="siranswer" id="siranswer4" type="checkbox" />Autorisation de
+                        conduite</label>
+                    <label for="siranswer5"><input name="siranswer" id="siranswer5" type="checkbox" />Habilitation
+                        électrique
+                        (travaux
+                        sur installations électriques)</label>
+                    <label for="siranswer6"><input name="siranswer" id="siranswer6" type="checkbox" />Salarié exposé à
+                        CMR</label>
+                    <label for="siranswer7"><input name="siranswer" id="siranswer7" type="checkbox" />Salarié exposé au
+                        plomb</label>
+                    <label for="siranswer8"><input name="siranswer" id="siranswer8" type="checkbox" />Salarié exposé au
+                        risque
+                        Hyperbare</label>
+                    <label for="siranswer9"><input name="siranswer" id="siranswer9" type="checkbox" />Salarié exposé au
+                        risque
+                        de chute de hauteur lors du montage et démontage d’échafaudage</label>
+                    <label for="siranswer10"><input name="siranswer" id="siranswer10" type="checkbox" />Manutention
+                        manuelle,
+                        port de
+                        charge ˃55kg (R4541-9)</label>
+                    <h3>Suivi Individuel Renforcé Annuel (SIRA) :</h3>
+                    <label for="sira-answer1"><input name="sira-answer" id="sira-answer1" type="checkbox" />Rayonnements
+                        ionisants
+                        Cat
+                        A</label>
+                    <label for="sira-answer2"><input name="siraanswer" id="sira-answer2" type="checkbox" />Moins de 18
+                        ans
+                        affecté à
+                        travaux
+                        réglementés</label>
+                </div>
+            </fieldset>
+            <div class="form1">
+                <!-- Partie demande de rendez-vous -->
+                <div class="column">
+                    <h3 class="title">Demande de rendez-vous</h3>
+                    <div class="form-element">
+                        <label for="motherhood">
+                            <input name="apt-reason" type="radio" id="motherhood" />Reprise après un congé de
+                            maternité
+                        </label>
+                        <label for="pro-sickness">
+                            <input name="apt-reason" type="radio" id="pro-sickness" />Reprise après une
+                            absence pour cause de maladie professionnelle
+                        </label>
+                        <label for="30d-absence">
+                            <input name="apt-reason" type="radio" id="30d-absence" />Reprise après une
+                            absence de + 30 jours
+                        </label>
+                        <label for="employer-request">
+                            <input name="apt-reason" type="radio" id="employer-request" />Examen à la demande
+                            de l’employeur
+                        </label>
+                    </div>
+                    <div id="divider">
+                        <hr>
+                    </div>
+                    <!-- Partie de raison de l'absence -->
+                    <div class="form-element">
+                        <label for="absence-reason1"><input name="absence-reason" id="absence-reason1"
+                                type="radio" />Accident
+                            de
+                            travail</label>
+                        <label for="absence-reason2"><input name="absence-reason" id="absence-reason2"
+                                type="radio" />Arrêt
+                            maladie</label>
+                    </div>
+                    <!-- Partie de date -->
+                    <div id="dates">
+                        <div class="form-element">
+                            <label for="recovery-date">Date de la reprise </label>
+                            <input type="date" name="recovery-date" id="recovery-date" required />
+                        </div>
+                        <!-- Partie de date de l'arret -->
+                        <div class="form-element">
+                            <label for="stop-date">Date de l'arrêt </label>
+                            <input type="date" name="stop-date" id="stop-date" required />
+                        </div>
+                    </div>
+                    <!-- Partie du motif -->
+                    <div class="form-element" id="employer-apt-request">
+                        <label for="employer-reason">Motif</label>
+                        <input type="text" name="employer-reason" id="employer-reason" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!-- Fin du formulaire -->
+    <!-- Boutons de redirection et validation -->
+    <div class="bottom">
+        <div class="return"><a href="/Projetaucasou/projet-dossier/index.html"><button>Retour</button></a></div>
+
+        <div class="next"><input type="submit" value="Envoyer le formulaire"><a
+                href="/Projetaucasou/projet-dossier/actions.html"></a></div>
+    </div>
+    <!-- Début du footer -->
+    <footer>
+        <ul class="footer-links">
+            <li>Siège social : SANTRA PLUS</li>
+            <li>CS 20874</li>
+            <li>76087 Le Havre cedex</li>
+            <li>www.santraplus.fr</li>
+            <li>SIRET 781 061 106 000 48</li>
+            <li>APE 8621Z</li>
+        </ul>
+    </footer>
+    <!-- Fin du footer -->
+
+</body>
+
+</html>
